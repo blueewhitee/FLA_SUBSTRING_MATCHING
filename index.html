@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DFA Simulator - Substring "ab" Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        #transitions, #result, #currentState {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 50px;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+        .state {
+            font-weight: bold;
+        }
+        .accept {
+            color: green;
+        }
+        .reject {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DFA Simulator - Detect Substring "ab"</h1>
+    <div class="input-container">
+        <label for="inputString">Enter a string (only 'a' and 'b'):</label>
+        <input type="text" id="inputString" value="aababb">
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <div id="currentState">Current State: <span class="state">q0</span></div>
+    <div id="transitions">Transitions:</div>
+    <div id="result">Result:</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
